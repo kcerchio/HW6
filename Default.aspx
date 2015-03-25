@@ -42,18 +42,13 @@
     
 
     </div>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/NewRecipe.aspx">Add a New Recipe</asp:HyperLink>
+        <br />
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="recipeID" DataSourceID="Sql_Recipe" AllowPaging="True" AllowSorting="True" PageSize="5" Width="850px">
             <Columns>
-                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                 <asp:BoundField DataField="recipe_name" HeaderText="Recipe Name" SortExpression="recipe_name" />
                 <asp:BoundField DataField="submitted_by" HeaderText="Submitted By" SortExpression="submitted_by" />
-                <asp:BoundField DataField="ing_1" HeaderText="Ingredient 1" SortExpression="ing_1" />
-                <asp:BoundField DataField="ing_2" HeaderText="Ingredient 2" SortExpression="ing_2" />
-                <asp:BoundField DataField="ing_3" HeaderText="Ingredient 3" SortExpression="ing_3" />
-                <asp:BoundField DataField="ing_4" HeaderText="Ingredient 4" SortExpression="ing_4" />
-                <asp:BoundField DataField="ing_5" HeaderText="Ingredient 5" SortExpression="ing_5" />
-                <asp:BoundField DataField="prep" HeaderText="Preperation" SortExpression="prep" />
-                <asp:BoundField DataField="notes" HeaderText="Notes" SortExpression="notes" />
+                <asp:HyperLinkField DataNavigateUrlFields="recipeID" DataNavigateUrlFormatString="RecipeDetails.aspx?recipeID={0}" Text="View" />
             </Columns>
         </asp:GridView>
     </form>
