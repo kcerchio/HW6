@@ -46,9 +46,17 @@
         <h1>Wicked Easy Recipes</h1>
         <h2>Use 5 Ingredients or Less!</h2><br />
 
+        <h4>
+            <asp:HyperLink ID="Home" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>&nbsp; 
+            <asp:HyperLink ID="NewRecipe" runat="server" NavigateUrl="~/NewRecipe.aspx">New Recipe</asp:HyperLink>&nbsp;
+            <asp:HyperLink ID="AboutUs" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>&nbsp;
+            <asp:HyperLink ID="ContactUs" runat="server" NavigateUrl="~/contact.aspx">Contact Us</asp:HyperLink>&nbsp;
 
-        <asp:FormView ID="FormView1" runat="server" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" DefaultMode="Insert">
-            <EditItemTemplate>
+        </h4>
+
+
+        <asp:FormView ID="FormView1" runat="server" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" DefaultMode="Insert" cssclass="FormView">
+             <EditItemTemplate>
                 
             </EditItemTemplate>
             <InsertItemTemplate>
@@ -154,6 +162,9 @@
                 
             </ItemTemplate>
         </asp:FormView>
+        <div>
+            <h4>&copy; Kyle Cerchio 2015 How Good is Your Recipe?</h4>
+        </div>
     </form>
 </body>
 </html>
