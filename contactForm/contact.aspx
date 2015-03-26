@@ -6,6 +6,7 @@
 
 <head runat="server">
     <title>Web Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 </head>
 
 <body>
@@ -13,6 +14,20 @@
 
         <!-- Check to see if you are in postback.  If not, display the contact form. -->
         <% If Not IsPostBack Then%>
+
+        <h1>Wicked Easy Recipes</h1>
+        <h2>Use 5 Ingredients or Less!</h2>
+            <br />
+
+         <h4>
+            <asp:HyperLink ID="Home" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>&nbsp; 
+            <asp:HyperLink ID="NewRecipe" runat="server" NavigateUrl="~/NewRecipe.aspx">New Recipe</asp:HyperLink>&nbsp;
+            <asp:HyperLink ID="AboutUs" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>&nbsp;
+            <asp:HyperLink ID="ContactUs" runat="server" NavigateUrl="~contact.aspx">Contact Us</asp:HyperLink>&nbsp;
+
+        </h4>
+
+        <br />
 
         Your name:<br />
         <asp:TextBox ID="senderName" runat="server" placeholder="First and last name" ></asp:TextBox>
@@ -46,6 +61,12 @@
 
         <!-- End your 'If' statement. -->
         <%End If%>
+
+        <div id="footer">
+            <p>
+            &copy; Kyle Cerchio 2015 How Good is Your Recipe?
+            </p>
+        </div>
 
     </form>
 </body>
