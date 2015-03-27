@@ -56,7 +56,7 @@
     </div>
         
         <br />
-        <asp:GridView ID="GridView1" CssClass="gridview" runat="server" AutoGenerateColumns="False" DataKeyNames="recipeID" DataSourceID="Sql_Recipe" AllowPaging="True" AllowSorting="True" PageSize="5" Width="850px">
+        <asp:GridView ID="GridView1" CssClass="gridview" runat="server" AutoGenerateColumns="False" DataKeyNames="recipeID" DataSourceID="Sql_Recipe" AllowPaging="True" AllowSorting="True" PageSize="5" Width="738px">
             <Columns>
                 <asp:BoundField DataField="recipe_name" HeaderText="Recipe Name" SortExpression="recipe_name" />
                 <asp:BoundField DataField="submitted_by" HeaderText="Submitted By" SortExpression="submitted_by" />

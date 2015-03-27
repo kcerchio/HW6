@@ -8,7 +8,7 @@
     <title>Web Contact Form</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 </head>
-
+    
 <body>
     <form id="form1" runat="server">
 
@@ -28,7 +28,7 @@
         </h4>
 
         <br />
-
+     <h4>
         Your name:<br />
         <asp:TextBox ID="senderName" runat="server" placeholder="First and last name" ></asp:TextBox>
         <br />
@@ -60,12 +60,15 @@
         <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
 
         <!-- End your 'If' statement. -->
-        <%End If%>
 
+        <%End If%>
+      </h4>
         <div id="footer">
-            <p>
+            <h4>
+            
             &copy; Kyle Cerchio 2015 How Good is Your Recipe?
-            </p>
+           
+            </h4>
         </div>
 
     </form>

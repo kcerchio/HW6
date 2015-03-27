@@ -1,3 +1,23 @@
-﻿body {}
-
+﻿body {background:#b200ff; font-family: 'Comic Sans MS';}
+h1 {text-align:center; color:#ffffff}
+h2 {text-align:center; margin:auto}
+h4 {text-align:center; color:#808080}
+#footer {text-align:center}
+footer {padding: 6px 9px;}
+.paragraph {text-align: left; padding-right:25%; padding-left:25%}
 .validationError {color:red; font-weight:bold;}
+.gridview th {border-width: 1px;
+	padding: 1px;
+	border-style: inset;
+	border-color: gray;
+	background-color: white;
+	-moz-border-radius:6px;}
+.gridview td {border-width: 1px;
+	padding: 1px;
+	border-style: inset;
+	border-color: gray;
+	background-color: white;
+	-moz-border-radius:6px;}
+.formview {margin-left:auto;margin-right:auto;}
+.gridview {align-content:center}
+table {margin-left:auto; margin-right:auto}
